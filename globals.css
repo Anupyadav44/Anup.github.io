@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{@apply bg-white text-ink font-sans antialiased}
+.card{@apply rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_8px_30px_-12px_rgba(29,95,224,.18)]}
+.h2{@apply font-display text-3xl sm:text-4xl font-bold tracking-tight}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.float{animation:float 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}}
